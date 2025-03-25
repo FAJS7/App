@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historial de Conversiones</title>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/css/title-btn-input.css" />
+    <link rel="stylesheet" href="/src/css/table.css" />
+  </head>
+  <body>
+    <div class="title-btn">
+      <h1>Historial de Conversiones</h1>
+      <button class="btn" onclick="window.location.href='/'">Inicio</button>
+    </div>
+    <div class="history-files">
+      <h2>Archivos</h2>
+      <form action="">
+        <input
+          type="text"
+          id="search"
+          class="inputs"
+          placeholder="Buscar archivo"
+        />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Archivo</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody id="historyTableBody">
+          <tr>
+            <td>Archivo 1</td>
+            <td>Fecha 1</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="fileList"></div>
+    </div>
+  </body>
+</html>
