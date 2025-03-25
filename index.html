@@ -1,13 +1,19 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Conversor de PDF</title>
+    <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="hometittle">
+      <h1>Conversor de PDF</h1>
+    </div>
+    <div id="app" class="tools">
+      <button class="btn" id="convertFile">Convertir archivo a PDF</button>
+      <button class="btn" id="convertLink">Convertir link a PDF</button>
+      <button class="btn" id="history">Historial de conversiones</button>
+    </div>
   </body>
 </html>
