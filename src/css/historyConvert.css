@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-navbar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+.report {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  height: 100px;
+}
+
+.stat .number {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.stat .label {
+  font-size: 12px;
+  color: #666;
+}
+
+.activity {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.details {
+  font-size: 14px;
+  color: #666;
+}
+
+.time {
+  font-size: 12px;
+  color: #999;
+}

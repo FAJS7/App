@@ -5,39 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Historial de Conversiones</title>
     <script type="module" src="/src/main.js"></script>
-    <link rel="stylesheet" href="/src/css/title-btn-input.css" />
-    <link rel="stylesheet" href="/src/css/table.css" />
+    <link rel="stylesheet" href="/src/css/historyConvert.css" />
+    <link rel="stylesheet" href="/src/css/navbar.css" />
   </head>
   <body>
-    <div class="title-btn">
-      <h1>Historial de Conversiones</h1>
-      <button class="btn" onclick="window.location.href='/'">Inicio</button>
-    </div>
-    <div class="history-files">
-      <h2>Archivos</h2>
-      <form action="">
-        <input
-          type="text"
-          id="search"
-          class="inputs"
-          placeholder="Buscar archivo"
-        />
-      </form>
-      <table>
-        <thead>
-          <tr>
-            <th>Archivo</th>
-            <th>Fecha</th>
-          </tr>
-        </thead>
-        <tbody id="historyTableBody">
-          <tr>
-            <td>Archivo 1</td>
-            <td>Fecha 1</td>
-          </tr>
-        </tbody>
-      </table>
-      <div id="fileList"></div>
+    <header class="navbar">
+      <div class="logo">
+        <a class="logo-navbar" href="/index.html">
+          <img src="/public/imgs/pdf-icon.png" alt="ConvertPDF Logo" />
+          <span>ConvertPDF</span>
+        </a>
+      </div>
+      <button class="logout-btn">
+        <img src="/public/imgs/logout-icon.png" alt="ConvertPDF Logo" />
+      </button>
+    </header>
+    <div class="container">
+      <section class="report">
+        <h2>Reporte de Conversiones</h2>
+        <div class="stats">
+          <div class="stat">
+            <p class="number">27</p>
+            <p class="label">Total de Archivos</p>
+          </div>
+          <div class="stat">
+            <p class="number">15</p>
+            <p class="label">Archivos Office</p>
+          </div>
+          <div class="stat">
+            <p class="number">12</p>
+            <p class="label">URLs</p>
+          </div>
+        </div>
+      </section>
+      <section class="activity">
+        <h2>Actividad Reciente</h2>
+        <ul class="activity-list">
+          <li>
+            <div>
+              <p class="title">Conversión completada</p>
+              <p class="details">doc.docx ➝ doc-1.pdf</p>
+            </div>
+            <span class="time">Hace 1 hora</span>
+          </li>
+          <li>
+            <div>
+              <p class="title">Conversión completada</p>
+              <p class="details">imagen.png ➝ imagen.pdf</p>
+            </div>
+            <span class="time">Hace 2 horas</span>
+          </li>
+          <li>
+            <div>
+              <p class="title">Conversión completada</p>
+              <p class="details">reporte.xlsx ➝ reporte.pdf</p>
+            </div>
+            <span class="time">Hace 5 horas</span>
+          </li>
+        </ul>
+        <button class="btn">Ver todo</button>
+      </section>
     </div>
   </body>
 </html>

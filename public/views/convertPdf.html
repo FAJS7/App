@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Convertir Archivo a PDF</title>
     <script type="module" src="/src/main.js"></script>
-    <link rel="stylesheet" href="/src/css/title-btn-input.css" />
+    <link rel="stylesheet" href="/src/css/navbar.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
   </head>
   <body>
-    <div class="title-btn">
+    <header class="navbar">
+      <div class="logo">
+        <a class="logo-navbar" href="/index.html">
+          <img src="/public/imgs/pdf-icon.png" alt="ConvertPDF Logo" />
+          <span>ConvertPDF</span>
+        </a>
+      </div>
+      <button class="logout-btn">
+        <img src="/public/imgs/logout-icon.png" alt="Cerrar sesión" />
+      </button>
+    </header>
+
+    <main class="container">
       <h1>Convertir Archivo a PDF</h1>
-      <button class="btn" onclick="window.location.href='/'">Inicio</button>
-    </div>
-    <div class="case-file">
-      <h2>Selecciona un archivo</h2>
-      <input type="file" id="fileInput" multiple />
-      <button class="btn" id="convert">Convertir</button>
-    </div>
+      <p>Selecciona un archivo de tu dispositivo para convertirlo a PDF.</p>
+
+      <div class="input-container">
+        <input type="file" id="fileInput" multiple />
+        <button class="btn" id="convert">Convertir</button>
+      </div>
+    </main>
   </body>
 </html>
